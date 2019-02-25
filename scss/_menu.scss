@@ -37,3 +37,107 @@
     }
   }
 }
+
+// Menu Overlay
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  // shortcut -> same as .menu-branding -> &- takes parent value (.menu-)  
+  &-branding, &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left; // ???
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  // Nav Slide
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(darken($primary-color, 5), 0.9);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+    
+    &.show {
+      // Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+
+    // Nav item slide & styling
+    .nav-item {
+      transform: translate3d(50vw, 0, 0);
+      @include easeOut;
+      
+      &.show {
+        // Slide in from right
+        transform: translate3d(0, 0, 0);
+      }
+
+      &.current > a {
+        color: $secondary-color;
+      }
+
+      // Link Styling
+      .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding: 0.8rem 0;
+        // font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  
+  //=================================== 
+
+  // Branding Side
+  &-branding {
+    background: rgba($primary-color, 0.9);
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    // Slide in from bottom
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    // Portrait
+    .portrait {
+      width: 17vw;
+      height: 17vw;
+      background: url('../img/portrait.jpg');
+      background-size: cover;
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+}
+
+// ====================================
+
+// Delay each nav item slide by 0.1s (for loop)
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}

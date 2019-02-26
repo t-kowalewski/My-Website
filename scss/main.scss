@@ -2,6 +2,8 @@
 @import 'config';
 @import 'menu';
 
+// ==========================================
+
 * {
   box-sizing: border-box;
 }
@@ -74,3 +76,8 @@ main {
     }
   }
 }
+
+// ======================
+
+// Import Media Queries
+@import 'mobile';

@@ -41,6 +41,8 @@
 // Menu Overlay
 .menu {
   position: fixed;
+  // float fix
+  display: flex;
   top: 0;
   width: 100%;
   visibility: hidden;
@@ -55,7 +57,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left; // ???
+    // float: left; // ???
     width: 50%;
     height: 100vh;
     overflow: hidden;

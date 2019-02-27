@@ -14,17 +14,6 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
-  main {
-    // align-items: center;
-    text-align: center;
-
-    .lg-heading {
-      font-size: 340%;
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
-  }
-
   // Menu Sections - Flex Column
   .menu {
     flex-direction: column;
@@ -59,6 +48,30 @@
     .nav-item {
       transform: translate3d(100vw, 0, 0);
     }
+  }
+
+  // Main Section
+  main {
+    // align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      font-size: 340%;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  // About Page - Grid
+  .about-info {
+    grid-template-areas:
+    'bioimage'
+    'bio'
+    'about-box1'
+    'about-box2'
+    'about-box3';
+
+    grid-template-columns: 1fr;
   }
 }
 

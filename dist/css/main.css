@@ -153,7 +153,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 2rem;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'about-box1 about-box2 about-box3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
@@ -165,13 +165,13 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
+  .about-info .about-box-1 {
+    grid-area: about-box1; }
+  .about-info .about-box-2 {
+    grid-area: about-box2; }
+  .about-info .about-box-3 {
+    grid-area: about-box3; }
+  .about-info .about-box {
     background: #515151;
     padding: 0.5rem;
     border-bottom: solid 5px #eece1a; }
@@ -184,12 +184,6 @@ main {
   height: 60px; }
 
 @media screen and (max-width: 847px) {
-  main {
-    text-align: center; }
-    main .lg-heading {
-      font-size: 340%;
-      line-height: 1;
-      margin-bottom: 1rem; }
   .menu {
     flex-direction: column; }
   div.menu-branding, ul.menu-nav {
@@ -206,7 +200,16 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
     .menu-nav .nav-item {
-      transform: translate3d(100vw, 0, 0); } }
+      transform: translate3d(100vw, 0, 0); }
+  main {
+    text-align: center; }
+    main .lg-heading {
+      font-size: 340%;
+      line-height: 1;
+      margin-bottom: 1rem; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'about-box1' 'about-box2' 'about-box3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

@@ -85,7 +85,7 @@ main {
   grid-gap: 2rem;
   grid-template-areas: 
   'bioimage bio bio'
-  'job1 job2 job3';
+  'about-box1 about-box2 about-box3';
   grid-template-columns: repeat(3, 1fr);
   
   // Grid Areas
@@ -103,27 +103,27 @@ main {
     font-size: 1.5rem;
   }
   
-  .job-1 {
-    grid-area: job1;
+  .about-box-1 {
+    grid-area: about-box1;
   }
   
-  .job-2 {
-    grid-area: job2;
+  .about-box-2 {
+    grid-area: about-box2;
   }
   
-  .job-3 {
-    grid-area: job3;
+  .about-box-3 {
+    grid-area: about-box3;
   }
   // Grid Areas End
 
-  .job {
+  .about-box {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: solid 5px $secondary-color;
   }
 }
 
-// Footer - fixed (see 'main' styles)
+// Footer - sticky (see 'main' styles)
 #main-footer {
   text-align: center;
   font-size: 0.9rem;

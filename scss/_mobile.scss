@@ -1,13 +1,19 @@
 // Widescreens
 @include mediaXl {
-  
+  // Work / Projects Page
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // =====================================
 
 // Desctops & Laptops
 @include mediaLg {
-
+  // Work / Projects Page
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // =====================================
@@ -73,6 +79,11 @@
 
     grid-template-columns: 1fr;
   }
+
+  // Work / Projects Page
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // =====================================
@@ -82,5 +93,10 @@
   main#home h1 {
     font-size: 280%;
     margin-top: 15vh;
+  }
+
+  // Work / Projects Page
+  .projects {
+    grid-template-columns: 1fr;
   }
 }

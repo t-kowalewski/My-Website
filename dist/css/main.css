@@ -285,5 +285,7 @@ main {
     height: 180px; }
   .projects {
     grid-template-columns: 1fr; }
-  .boxes div:hover {
-    padding: 1.5rem 2.5rem; } }
+  .boxes div {
+    padding: 1rem 2rem; }
+    .boxes div:hover {
+      padding: 1rem 2rem; } }

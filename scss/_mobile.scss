@@ -116,7 +116,11 @@
   }
 
   // Contact Page
-  .boxes div:hover {
-    padding: 1.5rem 2.5rem;
+  .boxes div {
+    padding: 1rem 2rem;
+
+    &:hover {
+      padding: 1rem 2rem;
+    }
   }
 }

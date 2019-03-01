@@ -114,4 +114,9 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  // Contact Page
+  .boxes div:hover {
+    padding: 1.5rem 2.5rem;
+  }
 }

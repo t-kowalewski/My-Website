@@ -90,9 +90,24 @@
 
 // Mobile Phones
 @include mediaSm {
+  main {
+    padding: 2rem;
+  }
+
   main#home h1 {
     font-size: 280%;
-    margin-top: 15vh;
+    margin-top: 10vh;
+  }
+
+  .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+
+  // About Page
+  .about-info .bio-img {
+    width: 180px;
+    height: 180px;
   }
 
   // Work / Projects Page

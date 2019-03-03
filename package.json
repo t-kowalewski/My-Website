@@ -4,7 +4,8 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,11 @@
   "bugs": {
     "url": "https://github.com/t-kowalewski/My-Website/issues"
   },
-  "homepage": "https://github.com/t-kowalewski/My-Website#readme",
+  "homepage": "https://t-kowalewski.github.io/My_Website",
   "dependencies": {
     "node-sass": "^4.11.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

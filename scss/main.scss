@@ -166,9 +166,9 @@ main {
     &:hover {
       padding: 2rem 3rem;
       background: $secondary-color;
-      color: set-text-color($secondary-color);
+      color: #e3e3e3;
       span {
-        color: set-text-color($secondary-color);
+        color: #e3e3e3;
       }
     }
   }
@@ -185,7 +185,7 @@ main {
   margin-bottom: 0.3rem;
   &:hover {
     background: $secondary-color;
-    color: set-text-color($secondary-color);
+    color: #e3e3e3;
     @include easeOut;
   }
 }
@@ -199,7 +199,7 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: darken($primary-color, 15);
   color: set-text-color($secondary-color);
   // color: #333;
 }

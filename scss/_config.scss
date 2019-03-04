@@ -1,9 +1,9 @@
 // Main Variables
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #e3e3e3;
+$secondary-color: #cb3737;
 $show-home-image: true;
-$home-image: url('../img/vidar-nordli-mathisen-558945-unsplash.jpg');
-$background-opacity: 0.7;
+$home-image: url('../img/cover-min.jpg');
+$background-opacity: 0.4;
 
 // Animation
 @mixin easeOut {
@@ -38,9 +38,9 @@ $background-opacity: 0.7;
 // Set Text Color - Function
 @function set-text-color($backgroundColor) {
   @if (lightness($backgroundColor) > 40) {
-    @return #000;
+    @return #392f2f;
   } @else {
-    @return #fff;
+    @return #fafafa;
   }
 }
 

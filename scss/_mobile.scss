@@ -91,9 +91,9 @@
 // Mobile Phones
 @include mediaSm {
   // Disable background image
-  // body#bg-img {
-  //   background: $primary-color;
-  // }
+  body#bg-img {
+    background: $primary-color;
+  }
 
   main {
     padding: 2rem;

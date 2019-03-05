@@ -2,8 +2,11 @@
 $primary-color: #e3e3e3;
 $secondary-color: #cb3737;
 $show-home-image: true;
-$home-image: url('../img/cover-min.jpg');
+$home-image: url('../img/cover-img.jpg');
 $background-opacity: 0.4;
+
+// Color palette:
+// https://colorhunt.co/palette/136570
 
 // Animation
 @mixin easeOut {

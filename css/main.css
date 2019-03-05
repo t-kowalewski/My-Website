@@ -100,9 +100,9 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/cover-img.jpg") no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100%; }
+    background: url("../img/cover-img.jpg");
+    background-attachment: fixed;
+    background-size: cover; }
     body#bg-img::after {
       content: '';
       position: absolute;
@@ -272,6 +272,8 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  body#bg-img {
+    background: #e3e3e3; }
   main {
     padding: 2rem; }
   main#home h1 {

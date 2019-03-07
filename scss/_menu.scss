@@ -40,12 +40,12 @@
 
 // Menu Overlay
 .menu {
+  visibility: hidden;
   position: fixed;
+  top: 0;
   // float fix
   display: flex;
-  top: 0;
   width: 100%;
-  visibility: hidden;
 
   &.show {
     visibility: visible;

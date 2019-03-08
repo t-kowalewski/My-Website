@@ -32,3 +32,11 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+
+window.addEventListener('load', remPreload);
+
+function remPreload() {
+  window.removeEventListener('load', remPreload);
+  document.body.classList.remove('preload');
+}

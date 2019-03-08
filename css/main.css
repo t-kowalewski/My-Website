@@ -90,7 +90,7 @@
   transition-delay: 0.4s; }
 
 .preload * {
-  transform: none !important; }
+  transition: none !important; }
 
 * {
   box-sizing: border-box; }

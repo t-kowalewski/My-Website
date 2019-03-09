@@ -112,6 +112,8 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(227, 227, 227, 0.4); }
+  body.preload * {
+    transition: none !important; }
 
 h1, h2, h3 {
   margin: 0;

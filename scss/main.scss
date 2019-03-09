@@ -17,6 +17,12 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  
+  // Disable transition - Remove after page load (main.js)
+  // Chrome bug
+  &.preload * {
+    transition: none !important;
+  }
 }
 
 h1, h2, h3 {

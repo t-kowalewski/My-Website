@@ -32,3 +32,12 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Disable transition (menu animation)
+// Transition works only after page load
+window.addEventListener('load', removePreload);
+
+function removePreload() {
+  window.removeEventListener('load', removePreload);
+  document.body.classList.remove('preload');
+}

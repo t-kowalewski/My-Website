@@ -89,9 +89,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-.preload * {
-  transition: none !important; }
-
 * {
   box-sizing: border-box; }
 
@@ -115,6 +112,8 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(227, 227, 227, 0.4); }
+  body.preload * {
+    transition: none !important; }
 
 h1, h2, h3 {
   margin: 0;

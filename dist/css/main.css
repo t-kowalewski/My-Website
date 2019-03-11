@@ -178,6 +178,11 @@ main {
     background: #f0f0f0;
     padding: 0.5rem;
     border-bottom: solid 5px #cb3737; }
+    .about-info .about-box ul {
+      list-style: none; }
+      .about-info .about-box ul li i {
+        color: #cb3737;
+        margin-right: 15px; }
 
 .projects {
   display: grid;
@@ -270,6 +275,10 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'about-box1' 'about-box2' 'about-box3';
     grid-template-columns: 1fr; }
+  .about-box ul {
+    padding: 0; }
+    .about-box ul i {
+      display: none; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 

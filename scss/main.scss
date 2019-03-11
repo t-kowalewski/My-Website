@@ -129,6 +129,17 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: solid 5px $secondary-color;
+
+    // List inside the About Box
+    ul {
+      list-style: none;
+      li {
+        i {
+          color: $secondary-color;
+          margin-right: 15px;
+        }
+      }
+    }
   }
 }
 

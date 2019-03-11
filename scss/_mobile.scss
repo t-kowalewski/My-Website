@@ -80,6 +80,14 @@
     grid-template-columns: 1fr;
   }
 
+  // About Page - list in the box
+  .about-box ul {
+    padding: 0;
+    i {
+      display: none;
+    }
+  }
+
   // Work / Projects Page
   .projects {
     grid-template-columns: repeat(2, 1fr);

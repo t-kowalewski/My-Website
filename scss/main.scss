@@ -183,13 +183,17 @@ main {
     border: solid 3px set-text-color($primary-color);
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    span.at {
+      font-family: 'Lato', sans-serif;
+      padding: 0 3px;
+    }
     @include easeOut;
     
     &:hover {
       padding: 2rem 3rem;
       background: $secondary-color;
       color: #e3e3e3;
-      span {
+      span i.fas {
         color: #e3e3e3;
       }
     }

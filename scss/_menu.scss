@@ -43,7 +43,6 @@
   visibility: hidden;
   position: fixed;
   top: 0;
-  // float fix
   display: flex;
   width: 100%;
 
@@ -57,7 +56,6 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    // float: left; // ???
     width: 50%;
     height: 100vh;
     overflow: hidden;
@@ -98,8 +96,8 @@
         font-size: 1.8rem;
         text-transform: uppercase;
         padding: 0.8rem 0;
-        // font-weight: 400;
         color: set-text-color($primary-color);
+        font-family: 'Lato', sans-serif;
         text-decoration: none;
         @include easeOut;
 
